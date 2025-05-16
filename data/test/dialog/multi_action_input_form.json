@@ -55,11 +55,11 @@
       }
     },
     {
-      "id": "trigger",
+      "id": "say",
       "label": "应用Z偏移",
       "on_submit": {
         "type": "command_template",
-        "template": "$(action) dialog_set_dz set $(dz)"
+        "template": "$(action) @s $(dx)"
       }
     }
   ]
