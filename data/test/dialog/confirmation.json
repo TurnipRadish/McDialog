@@ -1,0 +1,37 @@
+{
+  "type": "confirmation",
+
+  "title": {"text": "确认框", "color": "green"},
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "你是否同意？", "color": "gold"
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  
+  "yes": {
+    "label": {
+      "text": "是", "color": "green"
+    },
+    "tooltip": "悬浮提示1",
+    "on_click": {
+      "action": "run_command",
+      "command": "trigger dialog_signal set 3"
+    }
+  },
+  "no": {
+    "label": {
+      "text": "否", "color": "red"
+    },
+    "tooltip": "悬浮提示2",
+    "on_click": {
+      "action": "run_command",
+      "command": "trigger dialog_signal set 3"
+    }
+  }
+}
