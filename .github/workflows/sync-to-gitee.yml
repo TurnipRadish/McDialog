@@ -20,4 +20,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
         with:
           source-repo: 'git@github.com:${{ github.repository }}.git'
-          destination-repo: 'git@gitee.com:turnipradish/repo.git'
+          destination-repo: 'git@gitee.com:turnipradish/McDialog.git'
