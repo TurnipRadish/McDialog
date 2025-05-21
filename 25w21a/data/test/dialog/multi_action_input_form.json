@@ -10,36 +10,34 @@
       "type": "number_range",
 
       "key": "dx",
-      "initial": 0,
       "start": -10,
       "end": 10,
       "label": "X偏移",
-      "steps": 20,
+      "step": 1,
       "width": 128
     },
     {
       "type": "number_range",
 
       "key": "dy",
-      "initial": 0,
       "start": -10,
       "end": 10,
       "label": "Y偏移",
-      "steps": 20,
+      "step": 1,
       "width": 128
     },
     {
       "type": "number_range",
 
       "key": "dz",
-      "initial": 0,
       "start": -10,
       "end": 10,
       "label": "Z偏移",
-      "steps": 20,
+      "step": 1,
       "width": 128
     }
   ],
+  "columns": 1,
   "actions": [
     {
       "id": "trigger",
