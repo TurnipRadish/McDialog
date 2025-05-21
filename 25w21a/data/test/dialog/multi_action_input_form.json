@@ -15,7 +15,7 @@
       "end": 10,
       "label": "X偏移",
       "steps": 20,
-      "width": 64
+      "width": 128
     },
     {
       "type": "number_range",
@@ -26,7 +26,7 @@
       "end": 10,
       "label": "Y偏移",
       "steps": 20,
-      "width": 64
+      "width": 128
     },
     {
       "type": "number_range",
@@ -37,7 +37,7 @@
       "end": 10,
       "label": "Z偏移",
       "steps": 20,
-      "width": 64
+      "width": 128
     }
   ],
   "actions": [
@@ -62,7 +62,7 @@
       "label": "应用Z偏移",
       "on_submit": {
         "type": "command_template",
-        "template": "$(action) @s $(dx)"
+        "template": "$(action) dialog_set_dz set $(dz)"
       }
     }
   ]
