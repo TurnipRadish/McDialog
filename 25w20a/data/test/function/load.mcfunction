@@ -8,4 +8,4 @@ scoreboard objectives add var dummy
 
 data modify storage test:test args set value {}
 
-tellraw @a "已加载对话框测试数据包，目标版本25w20a"
+schedule function test:activate 10t

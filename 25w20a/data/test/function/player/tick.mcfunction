@@ -1,5 +1,3 @@
-execute if score @s activate_flag matches 1.. run function test:activate
-
 # 普通对话框信号
 scoreboard players enable @s dialog_signal
 
