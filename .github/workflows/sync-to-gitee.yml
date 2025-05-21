@@ -1,21 +1,23 @@
 name: Sync to Gitee
-on:
-  push:
-    branches: [ main ]  # 监听 main 分支的推送（如果是 master 则修改）
+on: [push]
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitHub repo
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取全部提交历史
+          fetch-depth: 0
+
+      - name: Fix Ownership
+        run: git config --global --add safe.directory /github/workspace
 
       - name: Mirror to Gitee
         uses: wearerequired/git-mirror-action@v1
         env:
+          GIT_SAFE_DIRECTORIES: /github/workspace
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
         with:
-          source-repo: "git@github.com:${{ github.repository }}.git"
-          destination-repo: "git@gitee.com:turnipradish/McDialog.git"
+          source-repo: 'git@github.com:${{ github.repository }}.git'
+          destination-repo: 'git@gitee.com:turnipradish/McDialog.git'
