@@ -58,7 +58,7 @@
       }
     },
     {
-      "id": "say",
+      "id": "trigger",
       "label": "应用Z偏移",
       "on_submit": {
         "type": "command_template",
