@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:server_links",
+  "title": {"text": "该对话框将产生循环bug"},
+  "button_width": 200,
+  "on_cancel": {
+    "action": "run_command",
+    "command": "execute as @s run say 2"
+  }
+}
+

@@ -1,0 +1,1 @@
+execute if score #temp var matches ..10 run function test:test

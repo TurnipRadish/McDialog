@@ -1,0 +1,69 @@
+{
+  "type": "multi_action_input_form",
+
+  "title": {"text": "多操作型输入表单"},
+  "body": [],
+  "can_close_with_escape": true,
+
+  "inputs": [
+    {
+      "type": "number_range",
+
+      "key": "dx",
+      "initial": 0,
+      "start": -10,
+      "end": 10,
+      "label": "X偏移",
+      "steps": 20,
+      "width": 64
+    },
+    {
+      "type": "number_range",
+
+      "key": "dy",
+      "initial": 0,
+      "start": -10,
+      "end": 10,
+      "label": "Y偏移",
+      "steps": 20,
+      "width": 64
+    },
+    {
+      "type": "number_range",
+
+      "key": "dz",
+      "initial": 0,
+      "start": -10,
+      "end": 10,
+      "label": "Z偏移",
+      "steps": 20,
+      "width": 64
+    }
+  ],
+  "actions": [
+    {
+      "id": "trigger",
+      "label": "应用X偏移",
+      "on_submit": {
+        "type": "command_template",
+        "template": "$(action) dialog_set_dx set $(dx)"
+      }
+    },
+    {
+      "id": "trigger",
+      "label": "应用Y偏移",
+      "on_submit": {
+        "type": "command_template",
+        "template": "$(action) dialog_set_dy set $(dy)"
+      }
+    },
+    {
+      "id": "say",
+      "label": "应用Z偏移",
+      "on_submit": {
+        "type": "command_template",
+        "template": "$(action) @s $(dx)"
+      }
+    }
+  ]
+}

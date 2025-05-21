@@ -1,0 +1,1 @@
+title @s title "这个提示使用了trigger！"

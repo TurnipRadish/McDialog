@@ -1,0 +1,44 @@
+{
+  "type": "dialog_list",
+  
+  "title": {"text": "对话列表"},
+  "body": [],
+  "can_close_with_escape": true,
+  
+  "button_width": 150,
+  "columns": 2,
+  "dialogs": [
+    {
+      "type": "notice",
+      "title": "对话1"
+    },
+    {
+      "type": "notice",
+      "title": "对话2"
+    },
+    {
+      "type": "notice",
+      "title": "对话3"
+    },
+    {
+      "type": "notice",
+      "title": "对话4"
+    },
+    {
+      "type": "notice",
+      "title": "对话5"
+    },
+    {
+      "type": "notice",
+      "title": "对话6"
+    },
+    {
+      "type": "notice",
+      "title": "对话6"
+    }
+  ],
+  "on_cancel": {
+    "action": "run_command",
+    "command": "trigger dialog_signal set 3"
+  }
+}

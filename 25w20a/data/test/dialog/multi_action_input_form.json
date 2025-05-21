@@ -13,8 +13,9 @@
       "initial": 0,
       "start": -10,
       "end": 10,
-      "label": "输入：X偏移",
-      "steps": 20
+      "label": "X偏移",
+      "steps": 20,
+      "width": 64
     },
     {
       "type": "number_range",
@@ -23,8 +24,9 @@
       "initial": 0,
       "start": -10,
       "end": 10,
-      "label": "输入：Y偏移",
-      "steps": 20
+      "label": "Y偏移",
+      "steps": 20,
+      "width": 64
     },
     {
       "type": "number_range",
@@ -33,8 +35,9 @@
       "initial": 0,
       "start": -10,
       "end": 10,
-      "label": "输入：Z偏移",
-      "steps": 20
+      "label": "Z偏移",
+      "steps": 20,
+      "width": 64
     }
   ],
   "actions": [

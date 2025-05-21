@@ -1,0 +1,53 @@
+{
+  "type": "simple_input_form",
+  
+  "body": [],
+  "can_close_with_escape": true,
+  "title": {"text": "简单输入表单"},
+  
+  "inputs": [
+    {
+      "key": "input_text",
+      "type": "text",
+      "label": {
+        "text": "请输入一段文字，然后设置颜色"
+      }
+    },
+    {
+      "key": "color",
+      "type": "single_option",
+      "label": "输出",
+      "options": [
+        {
+          "id": "red",
+          "display": {
+            "text": "红色",
+            "color": "red"
+          }
+        },
+        {
+          "id": "green",
+          "display": {
+            "text": "绿色",
+            "color": "green"
+          }
+        },
+        {
+          "id": "blue",
+          "display": {
+            "text": "蓝色",
+            "color": "blue"
+          }
+        }
+      ]
+    }
+  ],
+  "action": {
+    "id": "tellraw",
+    "label": "提交",
+    "on_submit": {
+      "type": "command_template",
+      "template": "$(action) @s {text:'$(input_text)', color:'$(color)'}"
+    }
+  }
+}

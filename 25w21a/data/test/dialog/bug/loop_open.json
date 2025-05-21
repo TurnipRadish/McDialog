@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:server_links",
+  "title": {"text": "该对话框在25w20a产生循环bug，已在25w21a修复"},
+  "button_width": 200,
+  "on_cancel": {
+    "action": "run_command",
+    "command": "execute as @s run say 2"
+  }
+}
+

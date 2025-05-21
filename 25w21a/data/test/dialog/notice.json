@@ -1,0 +1,37 @@
+{
+  "type": "notice",
+
+  "body": [
+    {
+      "type": "item",
+      "item": {
+        "id": "stone",
+        "count": 1
+      }
+    },
+    {
+      "type": "item",
+      "item": {
+        "id": "grass_block",
+        "count": 1
+      },
+      "description": "没人要的草方块?"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "这是一则公告，点击下方按钮可退出该界面"
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "title": {"text": "公告"},
+  
+  "action": {
+    "label": "好的",
+    "on_click": {
+      "action": "run_command",
+      "command": "trigger dialog_signal set 3"
+    }
+  }
+}

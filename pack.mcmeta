@@ -1,6 +1,14 @@
 {
   "pack": {
     "description": "Dialog Test - 对话框测试",
-    "pack_format": 77
+    "pack_format": 78
+  },
+  "overlays": {
+      "entries": [
+          {
+              "directory": "25w20a",
+              "formats": 77
+          }
+      ]
   }
 }
