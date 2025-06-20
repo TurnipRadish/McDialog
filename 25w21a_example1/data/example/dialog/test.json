@@ -1,0 +1,51 @@
+{
+  "type": "multi_action_input_form",
+
+  "title": {"text": "多操作型输入表单"},
+  "body": [],
+  "can_close_with_escape": true,
+
+  "inputs": [
+    {
+      "type": "number_range",
+
+      "key": "x",
+      "start": 0.5,
+      "end": 255.5,
+      "label": "R",
+      "step": 1,
+      "width": 256
+    },
+    {
+      "type": "number_range",
+
+      "key": "y",
+      "start": 0.5,
+      "end": 255.5,
+      "label": "G",
+      "step": 1,
+      "width": 256
+    },
+    {
+      "type": "number_range",
+
+      "key": "z",
+      "start": 0.5,
+      "end": 255.5,
+      "label": "B",
+      "step": 1,
+      "width": 255
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "id": "trigger",
+      "label": "设置颜色",
+      "on_submit": {
+        "type": "command_template",
+        "template": "$(action) dialog_set_rgb set $(x)$(y)$(z)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+$data modify storage example:data args.output set value '$(x)$(y)'

@@ -1,0 +1,17 @@
+{
+  "type": "dialog_list",
+  "title": "对话列表型对话框",
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": "点击按钮跳转到其他对话框"
+    }
+  ],
+  "dialogs": [
+    "example:confirmation",
+    "example:dialog_list",
+    "example:notice",
+    "example:from_tag/g_key_pressed",
+    "example:from_tag/author_info"
+  ]
+}

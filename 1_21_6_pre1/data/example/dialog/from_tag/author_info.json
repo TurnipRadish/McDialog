@@ -1,0 +1,12 @@
+{
+  "type": "notice",
+  "title": "作者信息",
+  "external_title": {"text": "作者信息（显示在ESC界面中）", "color": "green"},
+
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Minecraft Wiki"
+    }
+  ]
+}

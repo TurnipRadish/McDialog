@@ -1,0 +1,19 @@
+{
+  "type": "notice",
+  "title": "测试",
+  "inputs": [
+    {
+      "type": "text",
+      "key": "input_text",
+      "label": "请输入一段文本"
+    }
+  ],
+  "action": {
+    "label": "操作",
+    "tooltip": "操作提示",
+    "action": {
+      "type": "dynamic/run_command",
+      "template": "execute as @s run title @s $(input_text)"
+    }
+  }
+}

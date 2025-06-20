@@ -1,0 +1,1 @@
+$data modify storage example:data args.output set from storage example:data list[$(index)]

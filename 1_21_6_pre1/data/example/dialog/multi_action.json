@@ -1,0 +1,31 @@
+{
+  "type": "multi_action",
+  "title": "多操作型对话框",
+  "body": [],
+  "actions": [
+    {
+      "label": "再次显示该对话框",
+      "tooltip": "可刷新当前对话框状态",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "example:multi_action"
+      }
+    },
+    {
+      "label": "执行命令1",
+      "tooltip": "say之类的带签名命令不能直接执行，这里加上execute",
+      "action": {
+        "type": "run_command",
+        "command": "execute as @s run say 1"
+      }
+    },
+    {
+      "label": "执行命令2",
+      "tooltip": "为避免弹出命令执行警告，可使用trigger",
+      "action": {
+        "type": "run_command",
+        "command": "trigger dialog_signal set 1"
+      }
+    }
+  ]
+}

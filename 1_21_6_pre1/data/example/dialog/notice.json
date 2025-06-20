@@ -1,0 +1,10 @@
+{
+  "type": "notice",
+  "title": "公告型对话框",
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": "一段公告信息"
+    }
+  ]
+}

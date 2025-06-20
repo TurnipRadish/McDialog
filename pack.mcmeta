@@ -7,13 +7,10 @@
   "overlays": {
       "entries": [
           {
-            "directory": "25w20a",
-            "formats": 77
-          },
-          {
-            "directory": "25w21a",
-            "formats": 78
+            "directory": "1_21_6_pre1",
+            "formats": 79
           }
+          
       ]
   }
 }
